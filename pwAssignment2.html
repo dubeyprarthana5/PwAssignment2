@@ -1,0 +1,272 @@
+<!--Assignment Code: FSD-AG-002
+Introduction to Python: Basics and Data
+Structures | Assignments-->
+
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<!--Question 1 : What are semantic HTML elements? Why is using them important for web
+development?-->
+
+#ANSWER:-
+
+- Semantic HTML elements are HTML tags that provide meaning to the content they contain.
+  They describe the purpose of the content rather than just how it should look.
+  This is a shift from older HTML, which used tags like <div> and <span> for almost everything, 
+  forcing developers to use class names to give them meaning.
+
+  # Why Semantic HTML is Important:-
+  Using semantic HTML is important for several reasons, 
+  including improved accessibility, better SEO, and enhanced maintainability.
+
+
+  #Examples of Semantic Elements:-
+  Here are some common examples of semantic HTML elements and their uses:
+
+  <header>
+  <nav>
+  <main> 
+  <article>
+  <section>
+  <aside>
+  <footer>
+  
+____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<!--Question 2: You're designing a blog page. Which semantic elements would you use to 
+structure the page, and why?-->
+
+#ANSWER:- 
+
+      A well-structured blog page utilizes several HTML5 semantic elements 
+      clearly define the purpose of different sections, which benefits
+      accessibility, SEO, and maintainability.
+
+     # Here are the key semantic elements I would use and the reasoning:-
+
+     Semantic Element	Usage on a Blog Page	Why Use It?
+     <html>	The root element of the entire page.	
+            Fundamental: Defines the start and end of the HTML document.
+
+     <head>	Contains meta-information about the HTML document 
+            (e.g., title, character set, links to CSS/JS).
+            Metadata: Essential for the browser, search engines, and social media sharing.
+
+     <body>	Contains all the visible content of the page.	
+            Content Container: Holds everything the user sees.
+
+    <header> Typically placed at the top of the entire page or within an article.
+             It contains introductory content, often a logo, site title,
+             and main navigation.	
+             Branding/Identity: Clearly identifies the top section of the page 
+             or the introductory part of an individual article.
+
+    <nav>  	 Contains the primary navigation links for the site
+             (e.g., Home, About, Categories).
+   	         Navigation: Explicitly marks the main link structure, making it
+             easy for screen readers and search engines to find site navigation.
+
+
+     <main> 	Encloses the dominant content unique to this blog page
+              (e.g., the main list of blog posts or the full content of a single blog post).
+            	Primary Content: Designates the main topic of the document. 
+              Crucial for accessibility (screen readers can jump straight to it) and
+              SEO (highlights the most important content).
+              There should be only one per document.
+
+
+     <article>	Used for a self-contained piece of content that could be
+                distributed and reused independently
+                (e.g., an individual blog post or a comment).
+    	          Self-Contained Content: Clearly separates a single post from the 
+                rest of the page content.
+
+
+     <section>	Groups together content that is thematically related but isn't
+                a stand-alone article (e.g., a "Featured Posts" area, or the "About the Author" box).
+                Thematic Grouping: Provides a way to break up the main content into logical sub-groups.
+
+     <aside>	Content that is indirectly related to the main content,
+              often presented as a sidebar (e.g., "Related Posts," "Archives," "Social Media Links," or ads).
+   	          Supplemental Content: Clearly indicates content that is separate from the primary 
+              flow, often used for sidebars.
+
+
+     <footer>	Placed at the bottom of the entire page or within an <article>. 
+              It contains authorship information, copyright data, contact info, or secondary links.	
+              Conclusion/Meta-Info: Clearly marks the end section of the page or article,
+              often containing legal and supplementary information.
+
+              ]
+     <h1> - <h6>	Used for headings to create an outline of the content.
+                 <h1> for the main page title 
+                  (e.g., the blog's name or the title of the individual post).
+    	           Hierarchy/Outline: Establishes the structural importance of the content,
+                 which is vital for SEO and accessibility.
+
+
+     <figure> and <figcaption> 
+                    Used to wrap an image, code block, or illustration,
+                    and provide a caption for it.
+   	                Media/Context: Associates a caption directly with its media, 
+                    making the content more accessible and understandable.
+_______________________________________________________________________________________________________________________________________________________________________________________________
+
+<!--Question 3: How can you make an HTML form more accessible to users with 
+disabilities?-->
+
+#ANSWER:-
+        
+        Making an HTML form accessible is crucial for users with disabilities,
+         especially those who rely on screen readers or keyboard navigation.
+
+         #Here are the key methods to ensure form accessibility:
+
+        1. Programmatically Associate Labels and Inputs.
+        2. Ensure Keyboard Accessibility and Focus.
+        3. Group Related Controls.
+        4. Handle Errors and Instructions Clearly.
+        5. Utilize ARIA and HTML5 Attributes.
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+<!--Question 4: Identify and correct the errors in the following CSS code: 
+p { 
+font-size: 16; 
+color: #333 
+margin-top 10px; 
+}-->
+
+#ANSWER:- the provided CSS code has three syntax errors.
+---------------------------------------------------------------
+          Here is the original code with errors:
+
+         p { 
+         font-size: 16; /* Error 1: Missing unit */
+        color: #333 /* Error 2: Missing semicolon */
+         margin-top 10px; /* Error 3: Missing colon */
+        }
+--------------------------------------------------------------
+
+        correct code:- 
+
+                p { 
+          font-size: 16px; 
+          color: #333; 
+          margin-top: 10px; 
+         }
+ ___________________________________________________________________________________________________________________________________________
+
+ <!--Question 5: Write CSS rules to style all <h2> elements inside a <section> with a blue 
+color and center alignment.-->
+
+#ANSWER:- 
+         The key to this request is the descendant selector section h2.
+         This rule applies the styling only to <h2> elements nested anywhere inside a <section>.
+
+        #Here is the updated HTML file demonstrating the specific CSS rule you asked for:-
+
+         This single file contains the CSS you requested.
+          Notice how the nested <h2> is also styled, because the descendant selector targets any <h2> inside the parent <section>.
+
+        If you only wanted to target direct children (i.e., <h2> elements immediately inside a <section>, not deeply nested ones),
+         you would use the child selector: section > h2. 
+ ____________________________________________________________________________________________________________________________________________________________________________________________________
+
+ <!--Question 6: Explain the CSS box model and its components.-->
+
+#ANSWER:-
+         The CSS Box Model describes how elements are rendered on a web page as rectangular boxes.
+        Every element is made up of four layers that control its size, spacing, and appearance:
+
+        Content:
+         The innermost area, holding the actual content (text, images, etc.). 
+         Its size is defined by the element's width and height.
+
+        Padding:
+         The transparent space between the Content and the Border. 
+         It adds inner spacing and takes on the element's background color.
+
+        Border:
+         A line surrounding the Padding. This is the visible boundary of the box.
+
+        Margin: 
+        The transparent space surrounding the Border.
+         It controls the separation between the element and other adjacent elements.
+
+         In short, the box model determines the total space an element occupies:
+
+ __________________________________________________________________________________________________________________________________________________________________________________________________
+
+<!--Question 7: How do the relative, absolute, and fixed positioning properties differ in 
+CSS? -->
+
+#ANSWER:- 
+        The difference primarily lies in what the element is positioned relative to
+         (its offset parent) and whether it stays in the document flow:
+
+        1.position: relative;
+         Flow: Stays in the normal document flow.
+         Reference: Positioned relative to its original position. 
+         Shifting it (top, left, etc.) leaves a gap behind.
+
+        2.position: absolute;
+         Flow: Removed from the document flow.
+         Reference: Positioned relative to its closest ancestor that
+          has a position value other than static.
+
+        3.position: fixed;
+         Flow: Removed from the document flow.
+         Reference: Positioned relative to the viewport (browser window). 
+         It stays locked in place even when the user scrolls.
+
+
+         Basically, relative moves the element but saves its space; absolute moves the 
+         element relative to a parent and loses its space; and fixed moves the element relative
+          to the screen and never moves when scrolling.
+
+
+___________________________________________________________________________________________________________________________________________________________________________
+
+<!--Question 8: Write a CSS rule to set a background image for a <div> with the class 
+.banner, ensuring the image covers the entire area without repeating. -->
+
+#ANSWER:- 
+         The necessary CSS rule involves combining three properties:
+
+         CSS code :-
+
+         .banner {
+          background-image: url('path/to/image.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          }
+
+
+         Brief Explanation:
+
+         background-image sets the source URL of the image.
+
+         background-repeat: no-repeat; prevents the image from tiling across the element.
+
+         background-size: cover; ensures the image is scaled to be as large as possible to cover the entire container area,
+          clipping any excess if necessary.
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
